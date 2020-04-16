@@ -1,0 +1,232 @@
+@font-face {
+    font-family: MonserratBold;
+    src: url('/assets/fonts/montserrat/Montserrat-Bold.otf');
+}
+
+@font-face {
+    font-family: MonserratReg;
+    src: url('/assets/fonts/montserrat/Montserrat-Regular.otf');
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url('/assets/fonts/montserrat/Montserrat-Light.otf');
+}
+
+@font-face {
+    font-family: RobotoReg;
+    src: url('/assets/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url('/assets/fonts/roboto/Roboto-Light.ttf');
+}
+
+
+@font-face {
+    font-family: RobotoBold;
+    src: url('/assets/fonts/roboto/Roboto-Bold.ttf');
+}
+
+.header-nav {
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav>ul>li>a {
+    font-family: MontserratLight;
+    font-size: 12px;
+    border-top: 1px solid #E6EDE8;
+    color: #7c7c7c;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.conten-row {
+    border-bottom: 1px solid #E6EDE8;
+    padding-right: 182px;
+    padding-left: 182px;
+}
+
+.conten-row2 {
+    padding-right: 182px;
+    padding-left: 182px;
+}
+
+.row-second {
+    padding-top: 24px;
+    padding-bottom: 43px;
+}
+
+.title-bold {
+    font-family: MonserratReg;
+    font-size: 30px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+
+.title-section-2 {
+    font-family: MontserratLight;
+    font-weight: 300;
+    color: #4d4d4d;
+    font-size: 24px;
+    letter-spacing: 0.25px
+}
+
+.section-4 {
+    text-align: center;
+}
+
+.section-5 {
+    text-align: center;
+}
+
+.title-4 {
+    font-family: MonserratReg;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+
+.child-title-4 {
+    font-family: MonserratReg;
+    font-size: 19px;
+    font-weight: normal;
+    color: #4d4d4d;
+}
+
+.title-5 {
+    font-family: MontserratLight;
+    font-size: 24px;
+    font-weight: 300;
+    color: #4d4d4d;
+}
+
+.card-image {
+    text-align: center;
+    height: 200px;
+    padding: 0 29px;
+}
+
+.card-image img {
+    width: 60px;
+    display: block;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.card-image>.title_card {
+    font-weight: bold;
+    font-family: MonserratReg;
+    font-size: 16px;
+    color: #4d4d4d;
+    letter-spacing: 0.75;
+}
+
+.card-image>.desc_card {
+    font-weight: 600;
+    font-family: RobotoLight;
+    font-size: 13px;
+    color: #4d4d4d;
+}
+
+.desc_support {
+    font-family: MontserratLight;
+    color: #7c7c7c;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.button_primary {
+    border-radius: 30px;
+    padding: 8px 18px;
+    font-family: MontserratLight;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+}
+
+.button_outline {
+    border-radius: 30px;
+    padding: 8px 25px;
+    font-family: MonserratBold;
+    color: #4d4d4d;
+    font-size: 13px;
+    border: 2px solid;
+}
+
+.nb {
+    font-family: RobotoLight;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.25;
+    color: #7c7c7c;
+    margin: 10px 0 20px;
+}
+
+.desc_tech {
+    font-family: RobotoLight;
+    font-size: 14px;
+    letter-spacing: 0.25;
+    width: 90%;
+    color: #4d4d4d;
+    margin-bottom: 30px;
+}
+
+.footer_share {
+    background-color: #f7f7f7;
+    height: 67px;
+    font-family: RobotoBold;
+    font-size: 14px;
+    color: #7c7c7c;
+}
+
+.footer_help {
+    background-color: #00a2f3;
+    height: 147px;
+}
+
+.footer_help>div {
+    color: #fff;
+    font-family: MontserratLight;
+    font-size: 24px;
+    letter-spacing: 1;
+}
+
+.footer_detail {
+    background-color: #303030;
+    height: 97%;
+}
+
+.listFrist {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.listFrist li {
+    position: relative;
+    padding-left: 25px;
+    font-family: MontserratLight;
+    color: #7c7c7c;
+    font-size: 12px;
+    letter-spacing: 0.50px;
+    line-height: 28px;
+}
+
+.listFrist li:before {
+    content: '';
+    width: 19px;
+    height: 17px;
+    position: absolute;
+    background-image: url('/images/icon-centang.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
