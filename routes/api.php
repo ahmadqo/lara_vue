@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/menuActive', 'LaraVueController@getMenu');
 Route::get('/fasilitasPaket', 'LaraVueController@getFasilitasPaket');
+Route::get('/getPrice', 'LaraVueController@getPrice');

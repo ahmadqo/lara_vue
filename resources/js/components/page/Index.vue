@@ -60,23 +60,15 @@
                 </div> -->
             </div>
         </div>
-        <div class="row conten-row2">
-            <div class="col-md-12 section-4">
-                <span class="title-4">Paket Hosting Singapura yang Tepat</span>
-                <br />
-                <span class="child-title-4"
-                    >Diskon 40% + Domain dan SSL Gratis untuk Anda</span
-                >
-            </div>
-        </div>
+        <app-paket></app-paket>
 
-        <div class="row conten-row2">
+        <!-- <div class="row conten-row2">
             <div class="col-md-12 section-5">
                 <span class="title-5"
                     >Powerfull dengan Limit PHP yang Lebih Besar</span
                 >
             </div>
-        </div>
+        </div> -->
 
         <app-fasility></app-fasility>
         <app-supportLaravel></app-supportLaravel>
@@ -148,6 +140,7 @@
 <script>
 import Fasility from "./Fasility.vue";
 import SupportLaravel from "./SupportLaravel.vue";
+import Paket from "./Paket.vue";
 
 const listFirst = [
     "Solusi PHP untuk performa query yang lebih cepat.",
@@ -164,7 +157,8 @@ export default {
     },
     components: {
         "app-fasility": Fasility,
-        "app-supportLaravel": SupportLaravel
+        "app-supportLaravel": SupportLaravel,
+        "app-paket": Paket
     },
     created() {
         let uri = `http://localhost:8000/api/menuActive`;

@@ -230,3 +230,54 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.card-paket {
+    text-align: center;
+    display: inline-table;
+}
+
+.card-paket>.title_card {
+    font-family: MonserratBold;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
+.card-paket>.price {
+    display: grid;
+    font-family: MontserratLight;
+    padding: 13px;
+    color: #4d4d4d;
+}
+
+.card-paket>.total_user {
+    font-family: RobotoLight;
+    color: #4d4d4d;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.25;
+    line-height: 24px;
+    padding: 0 0 17px;
+}
+
+.card-paket>.desc_paket {
+    font-family: RobotoLight;
+    color: #4d4d4d;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.25;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 992px) {
+    .conten-row {
+        border-bottom: 1px solid #E6EDE8;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .conten-row2 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}

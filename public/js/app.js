@@ -1971,6 +1971,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Fasility_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Fasility.vue */ "./resources/js/components/page/Fasility.vue");
 /* harmony import */ var _SupportLaravel_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SupportLaravel.vue */ "./resources/js/components/page/SupportLaravel.vue");
+/* harmony import */ var _Paket_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Paket.vue */ "./resources/js/components/page/Paket.vue");
 //
 //
 //
@@ -2110,14 +2111,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 
 var listFirst = ["Solusi PHP untuk performa query yang lebih cepat.", "Konsumsi memori yang lebih rendah.", "Support PHP 5.3, PHP 5.4, PHP 5.5, PHP 5.6, PHP 7", "Fitur enkripsi IonCube dan Zend Guard Loaders"];
@@ -2130,7 +2124,8 @@ var listFirst = ["Solusi PHP untuk performa query yang lebih cepat.", "Konsumsi 
   },
   components: {
     "app-fasility": _Fasility_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    "app-supportLaravel": _SupportLaravel_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    "app-supportLaravel": _SupportLaravel_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    "app-paket": _Paket_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   created: function created() {
     var _this = this;
@@ -2138,6 +2133,84 @@ var listFirst = ["Solusi PHP untuk performa query yang lebih cepat.", "Konsumsi 
     var uri = "http://localhost:8000/api/menuActive";
     this.axios.get(uri).then(function (response) {
       _this.posts = response.data.data;
+    });
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/page/Paket.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/page/Paket.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      paket: []
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    var uri = "http://localhost:8000/api/getPrice";
+    this.axios.get(uri).then(function (response) {
+      _this.paket = response.data.data;
     });
   }
 });
@@ -19969,9 +20042,7 @@ var render = function() {
       _vm._v(" "),
       _vm._m(1),
       _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _vm._m(3),
+      _c("app-paket"),
       _vm._v(" "),
       _c("app-fasility"),
       _vm._v(" "),
@@ -20031,7 +20102,7 @@ var render = function() {
             _vm._v(" "),
             _c("br"),
             _vm._v(" "),
-            _vm._m(4),
+            _vm._m(2),
             _vm._v(" "),
             _c(
               "router-link",
@@ -20045,12 +20116,12 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _vm._m(5)
+        _vm._m(3)
       ]),
       _vm._v(" "),
-      _vm._m(6),
+      _vm._m(4),
       _vm._v(" "),
-      _vm._m(7),
+      _vm._m(5),
       _vm._v(" "),
       _c("div", { staticClass: "row conten-row2 footer_detail" })
     ],
@@ -20085,36 +20156,6 @@ var staticRenderFns = [
               alt: "aaa"
             }
           })
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row conten-row2" }, [
-      _c("div", { staticClass: "col-md-12 section-4" }, [
-        _c("span", { staticClass: "title-4" }, [
-          _vm._v("Paket Hosting Singapura yang Tepat")
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("span", { staticClass: "child-title-4" }, [
-          _vm._v("Diskon 40% + Domain dan SSL Gratis untuk Anda")
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row conten-row2" }, [
-      _c("div", { staticClass: "col-md-12 section-5" }, [
-        _c("span", { staticClass: "title-5" }, [
-          _vm._v("Powerfull dengan Limit PHP yang Lebih Besar")
         ])
       ])
     ])
@@ -20196,6 +20237,140 @@ var staticRenderFns = [
         ]
       )
     ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/page/Paket.vue?vue&type=template&id=290bf334&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/page/Paket.vue?vue&type=template&id=290bf334& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "row conten-row2",
+      staticStyle: { "margin-bottom": "40px" }
+    },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._l(_vm.paket, function(data) {
+        return _c(
+          "div",
+          { key: data.packetFor, staticClass: "col-md-3 card-paket" },
+          [
+            _c("span", { staticClass: "title_card" }, [
+              _vm._v(_vm._s(data.packetFor))
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "price" },
+              [
+                _c(
+                  "strike",
+                  {
+                    staticStyle: { "font-size": "12px", "font-weight": "700" }
+                  },
+                  [_vm._v("\n                " + _vm._s(data.oldPrice))]
+                ),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  {
+                    staticStyle: { "font-size": "24px", "font-weight": "bold" }
+                  },
+                  [_vm._v("\n                " + _vm._s(data.newPrice))]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "total_user" }, [
+              _c("span", [_vm._v(_vm._s(data.totalUser))]),
+              _vm._v(" Pengguna Terdaftar\n        ")
+            ]),
+            _vm._v(" "),
+            _vm._l(data.description, function(desc) {
+              return _c("div", { key: desc, staticClass: "desc_paket" }, [
+                _c("span", [_vm._v(_vm._s(desc))])
+              ])
+            }),
+            _vm._v(" "),
+            _c("span", { staticClass: "desc_card" }, [
+              _vm._v(_vm._s(data.desc))
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticStyle: { "margin-top": "28px" } },
+              [
+                data.packetFor === "Personal"
+                  ? _c(
+                      "router-link",
+                      {
+                        staticClass: "btn btn-primary button_primary",
+                        attrs: { to: { name: "" } }
+                      },
+                      [_vm._v("Pilih Sekarang")]
+                    )
+                  : _c(
+                      "router-link",
+                      {
+                        staticClass: "btn btn-outline-dark button_outline",
+                        attrs: { to: { name: "" } }
+                      },
+                      [_vm._v("Pilih Sekarang")]
+                    )
+              ],
+              1
+            )
+          ],
+          2
+        )
+      })
+    ],
+    2
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "col-md-12 section-4",
+        staticStyle: { "margin-bottom": "60px" }
+      },
+      [
+        _c("span", { staticClass: "title-4" }, [
+          _vm._v("Paket Hosting Singapura yang Tepat")
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "child-title-4" }, [
+          _vm._v("Diskon 40% + Domain dan SSL Gratis untuk Anda")
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -35678,6 +35853,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_20ee1e86___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_20ee1e86___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/page/Paket.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/page/Paket.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Paket_vue_vue_type_template_id_290bf334___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Paket.vue?vue&type=template&id=290bf334& */ "./resources/js/components/page/Paket.vue?vue&type=template&id=290bf334&");
+/* harmony import */ var _Paket_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Paket.vue?vue&type=script&lang=js& */ "./resources/js/components/page/Paket.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Paket_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Paket_vue_vue_type_template_id_290bf334___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Paket_vue_vue_type_template_id_290bf334___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/page/Paket.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/page/Paket.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/page/Paket.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Paket_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Paket.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/page/Paket.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Paket_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/page/Paket.vue?vue&type=template&id=290bf334&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/page/Paket.vue?vue&type=template&id=290bf334& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Paket_vue_vue_type_template_id_290bf334___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Paket.vue?vue&type=template&id=290bf334& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/page/Paket.vue?vue&type=template&id=290bf334&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Paket_vue_vue_type_template_id_290bf334___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Paket_vue_vue_type_template_id_290bf334___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

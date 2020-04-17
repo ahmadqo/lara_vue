@@ -71,4 +71,82 @@ class LaraVueController extends Controller
             'data'    => $data
         ]);
     }
+
+    public function getPrice()
+    {
+        $data = [
+            [
+                "packetFor" => 'Bayi',
+                "oldPrice" => 'Rp 19.000',
+                "newPrice" => 'Rp 14.900/bln',
+                "totalUser" => 938,
+                "description" => [
+                    "0.5X Resource Power",
+                    "500 MB Disk Space",
+                    "Unlimited Bandwith",
+                    'Unlimited Databases',
+                    '1 Domain',
+                    'Instant Backup',
+                    'Unlimited SSL Gratis Selamanya'
+                ]
+            ],
+            [
+                "packetFor" => 'Dewasa',
+                "oldPrice" => 'Rp 46.000',
+                "newPrice" => 'Rp 23.450/bln',
+                "totalUser" => 4168,
+                "description" => [
+                    "1X Resource Power",
+                    "Unlimited Disk Space",
+                    "Unlimited Bandwith",
+                    "Unlimited POP3 Email",
+                    'Unlimited Databases',
+                    '10 Addon Domain',
+                    'Instant Backup',
+                    "Domain Gratis Selamanya",
+                    'Unlimited SSL Gratis Selamanya'
+                ]
+            ], [
+                "packetFor" => 'Personal',
+                "oldPrice" => 'Rp 58.000',
+                "newPrice" => 'Rp 38.900/bln',
+                "totalUser" => 10.017,
+                "description" => [
+                    "2X Resource Power",
+                    "Unlimited Disk Space",
+                    "Unlimited Bandwith",
+                    "Unlimited POP3 Email",
+                    'Unlimited Databases',
+                    'Unlimited Addon Domain',
+                    'Instant Backup',
+                    "Domain Gratis Selamanya",
+                    'Unlimited SSL Gratis Selamanya',
+                    'Private Name Server',
+                    'SpamAssasin Mail Protection'
+                ]
+            ], [
+                "packetFor" => 'Bisnis',
+                "oldPrice" => 'Rp 19.000',
+                "newPrice" => 'Rp 14.900/bln',
+                "totalUser" => 938,
+                "description" => [
+                    "3X Resource Power",
+                    "Unlimited Disk Space",
+                    "Unlimited Bandwith",
+                    "Unlimited POP3 Email",
+                    'Unlimited Databases',
+                    'Unlimited Addon Domain',
+                    'Magic Auto Backup & Restore',
+                    "Domain Gratis Selamanya",
+                    'Unlimited SSL Gratis Selamanya',
+                    'Private Name Server',
+                    'Prioritas Layanan Support',
+                    'SamExpert Pro Mail Protection'
+                ]
+            ]
+        ];
+        return response()->json([
+            'data'    => $data
+        ]);
+    }
 }
